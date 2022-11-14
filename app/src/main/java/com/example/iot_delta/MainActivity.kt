@@ -42,6 +42,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Cancelado",Toast.LENGTH_SHORT).show()
             }else{
                 Toast.makeText(this,"El valor escaneado es: ${result.contents}",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, NavegadorActivity::class.java)
+                intent.putExtra("direccion", result.contents.toString())
+                startActivity(intent)
             }
         }else{
             super.onActivityResult(requestCode, resultCode, data)
