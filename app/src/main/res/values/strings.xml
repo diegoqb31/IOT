@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IOT-Delta</string>
+    <string name="titulo">IOT-DELTA</string>
+    <string name="lectorqr">Lector QR</string>
+    <string name="facial">Reconocimiento Facial</string>
+    <string name="sensorLuz">Sensor de luz</string>
+</resources>
