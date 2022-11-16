@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.btnScanner.setOnClickListener{initScanner()}
 
-        val buttonClick = findViewById<Button>(R.id.btnSensorLuz)
+        /*val buttonClick = findViewById<Button>(R.id.btnSensorLuz)
         buttonClick.setOnClickListener {
             val intent = Intent(this, LigthActivity::class.java)
             startActivity(intent)
-        }
+        }*/
 
     }
 

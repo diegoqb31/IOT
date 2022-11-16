@@ -21,14 +21,14 @@ class LigthActivity : AppCompatActivity(), SensorEventListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ligth)
 
-        //val display: GifImageView = findViewById(R.id.display_img)
-        //display.visibility = View.INVISIBLE
+        val display: GifImageView = findViewById(R.id.display_img)
+        display.visibility = View.INVISIBLE
 
-       // sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
-       // sensors = sensorManager!!.getDefaultSensor(Sensor.TYPE_LIGHT)
+        sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        sensors = sensorManager!!.getDefaultSensor(Sensor.TYPE_LIGHT)
     }
 
-/*
+
     override fun onResume(){
         super.onResume()
         sensorManager!!.registerListener(this,sensors,SensorManager.SENSOR_DELAY_NORMAL)
@@ -38,11 +38,11 @@ class LigthActivity : AppCompatActivity(), SensorEventListener {
         super.onPause()
         sensorManager!!.unregisterListener(this)
     }
-*/
+
     var isRunning = false
 
     override fun onSensorChanged(event: SensorEvent?) {
-        /*try{
+        try{
             if(event!!.values[0] < 30 && isRunning == false){
                 isRunning = true
                 val display: GifImageView = findViewById(R.id.display_img)
@@ -55,7 +55,7 @@ class LigthActivity : AppCompatActivity(), SensorEventListener {
             }
         }catch (e: IOException){
 
-        }*/
+        }
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {

@@ -26,7 +26,7 @@
                 android:fontFamily="sans-serif-black"
                 android:gravity="center_horizontal"
                 android:text="@string/app_name"
-                android:textColor="#FFEB3B"
+                android:textColor="#F4E138"
                 android:textSize="48sp" />
 
         </LinearLayout>
@@ -51,17 +51,6 @@
                 android:textSize="24sp"
                 tools:ignore="TextContrastCheck" />
 
-            <Button
-                android:id="@+id/btnSensorLuz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/ligth_blue"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:text="@string/sensorLuz"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                tools:ignore="TextContrastCheck" />
         </LinearLayout>
 
 
